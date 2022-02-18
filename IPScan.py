@@ -32,21 +32,21 @@ target=args.target
 subprocess.call("mkdir " + target, shell=True)
 '''---------------------------------Tools-------------------------------------'''
 # metabigor
-print(colored("[+] Run metabigor to get CIDR", 'blue', attrs=['bold']))
+print(colored("[+] Get CIDR", 'blue', attrs=['bold']))
 subprocess.call("echo " +target+" | metabigor net --org  >>" +target+"/CIDR.txt", shell=True)
 
 # mapcidr
-print(colored("[+] Run mapcidr to get IPs From CIDR", 'blue', attrs=['bold']))
+print(colored("[+] From CIDR Get IPs", 'blue', attrs=['bold']))
 subprocess.call("mapcidr -l "+target+"/CIDR.txt -silent >"+target+"/IPss.txt", shell=True)
 subprocess.call("cat "+target+"/IPss.txt|sort|uniq >"+target+"/IPs.txt", shell=True)
 subprocess.call("rm "+target+"/IPss.txt", shell=True)
 
 # nrich
-print(colored("[+] Scanning all IPs nrich", 'blue', attrs=['bold']))
+print(colored("[+] Scanning Open Ports in each IP and Find a related vulnerabilities", 'blue', attrs=['bold']))
 subprocess.call("nrich -o json "+target+"/IPs.txt >"+target+"/IP_nrich.json", shell=True)
 
 # httpx
-print(colored("[+] Run httpx to get Live IPs", 'blue', attrs=['bold']))
+print(colored("[+] Check a Live Host", 'blue', attrs=['bold']))
 subprocess.call("cat "+target+"/IPs.txt|httpx -silent -t 100000 >"+target+"/Live_IPs.txt", shell=True)
 
 
