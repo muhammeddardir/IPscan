@@ -50,6 +50,4 @@ go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 cd ~/go/bin
 sudo cp * /usr/local/bin
 
-
-
-
+tput setaf 1; echo "  Done ^_^  "
