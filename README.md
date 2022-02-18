@@ -10,10 +10,10 @@ Tools : `metabigor, mapcidr, nrich ,httpx`
 - Check Live Host 
 
 **installation**
-`git clone https://github.com/muhammeddardir/IPscan.git`
-`cd IPscan` 
-`chmod +x IPScan.py req.sh`
-`./req.sh`
+- `git clone https://github.com/muhammeddardir/IPscan.git`
+- `cd IPscan` 
+- `chmod +x IPScan.py req.sh`
+- `./req.sh`
 
 **Usage**
-`python3 IPScan.py -t domain`
+- `python3 IPScan.py -t domain`
