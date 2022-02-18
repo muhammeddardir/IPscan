@@ -11,7 +11,8 @@ sudo apt-get install python3 -y;
 sudo apt-get install pipx -y;
 sudo apt-get install pip -y; 
 sudo apt-get install git -y;
-sudo pip install subprocess ; 
+sudo pip install subprocess ;
+sudo pip install colored ;
 sudo pip install termcolor ; 
 
 tput setaf 1; echo "[+] Create Directory Tools"
