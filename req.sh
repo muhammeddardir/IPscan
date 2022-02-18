@@ -6,13 +6,13 @@ tput setaf 1; echo "[+] install Programming langs and libraries"
 tput setaf 7; echo ""
 
 sleep 1;
-sudo apt-get install golang;
-sudo apt-get install python3;
-sudo apt-get install pipx;
-sudo apt-get install pip; 
-sudo apt-get install git;
-sudo pip install subprocess; 
-sudo pip install termcolor; 
+sudo apt-get install golang -y;
+sudo apt-get install python3 -y;
+sudo apt-get install pipx -y;
+sudo apt-get install pip -y; 
+sudo apt-get install git -y;
+sudo pip install subprocess -y; 
+sudo pip install termcolor -y; 
 
 tput setaf 1; echo "[+] Create Directory Tools"
 tput setaf 7; echo ""
