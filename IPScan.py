@@ -50,6 +50,4 @@ print(colored("[+] Check a Live Host", 'blue', attrs=['bold']))
 subprocess.call("cat "+target+"/IPs.txt|httpx -silent -t 100000 >"+target+"/Live_IPs.txt", shell=True)
 
 
-
-
-
+print(colored("   Done    ^_^ ", "red", attrs=['bold']))
