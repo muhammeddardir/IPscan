@@ -7,7 +7,7 @@ Tools : `metabigor, mapcidr, nrich ,httpx`
 - Get CIDR
 - From CIDR Get IPs
 - Scanning Open Ports in each IP and Find a related vulnerabilities
-- Check Live Host 
+- Check a Live Host
 
 **installation**
 - `git clone https://github.com/muhammeddardir/IPscan.git`
