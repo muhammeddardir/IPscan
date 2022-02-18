@@ -17,3 +17,6 @@ Tools : `metabigor, mapcidr, nrich ,httpx`
 
 **Usage**
 - `python3 IPScan.py -t domain`
+
+
+![IPscan](https://user-images.githubusercontent.com/49698339/154711157-cc0f4cab-8520-4ca7-af63-6ee7c0635d6e.png)
